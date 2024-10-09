@@ -1,0 +1,13 @@
+var weekArr = ["Sunday" , "Monday" , "Tuesday" , "Wednesday" , "Thursday" , "Friday" , "Saturday"];
+var monthArr = ["Jan" , "Feb" , "Mar" , "Aprt" , "May" , "Jun" , "Jul" , "Aug" , "Sep" , "Oct" , "Nov" , "Dec"];
+var currentDate = new Date();
+var weekDay = currentDate.getDay();
+var month = currentDate.getMonth();
+var date = currentDate.getDate();
+var year = currentDate.getFullYear();
+var hour = currentDate.getHours();
+var min = currentDate.getMinutes();
+var second = currentDate.getSeconds();
+var outDate = date + weekArr[weekDay] + (month + 1) + monthArr[month] + year + hour + ":" + min + ":" + second;
+var outDate2 = `${date} ${weekArr[weekDay]} ${(month+1)} ${monthArr[month]} ${year} ${hour}:${min}:${second}`;
+console.log(outDate2);
